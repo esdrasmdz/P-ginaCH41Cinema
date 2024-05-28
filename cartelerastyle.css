@@ -1,0 +1,189 @@
+*{
+    font-family: 'Segoe UI' Verdana, Geneva, Tahoma, sans-serif;
+ }
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    border: hidden;
+ }
+ 
+ 
+ body {
+    background: rgb(2,0,36);
+ background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 27%, rgba(0,212,255,1) 100%);
+ }
+ th, td {
+    border: 2px solid black;
+    text-align: left;
+    border: hidden;
+ }
+ .descripcion {  /*ancho de la columna*/
+    width: 50%;
+ 
+    
+ 
+ }
+ img {
+    border-radius: 10%;   /* aplicar borde a la imagen*/
+ }
+ 
+ 
+ h1{
+    color: #040404;
+    text-shadow: rgb(241, 238, 238) 5px  2px 4px;  /*nos sirve para sobrear la letra*/
+        text-align: center;
+ }
+ .msg {
+    /*propiedades que tenemos de la fuente*/
+    font-size:70px ;
+    font-style: italic;
+    text-align: center;
+ }
+ 
+ 
+ .content {  /* margen de la tabla*/
+    margin: 5%;
+ }
+ 
+ 
+ .menu{
+    font-size:30px ;
+    font-style: italic;
+    text-align: center;
+    text-decoration: overlines;
+ }
+ button {       /*clase buton solo se queda como ejemplo*/
+    border-radius: 15px;
+    padding: 10px 25px;
+    color: white;
+    background-color: #2920b4;
+    text-align: center;
+    width: auto;
+    font-size: 20px;
+ }
+ 
+ 
+ section {
+    display: flex;
+    width: 90%;
+    height: 500px;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+ 
+ 
+ section img {       /*darle estilo a las imagenes img que estan dentro de la seccion*/
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+ }
+ 
+ 
+ section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+ }
+ .main {      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+ }
+ 
+ 
+ .btn {               /*para que el boton se ilumine*/
+    color:white;
+    text-decoration: none;
+    width: 12vw;
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+    padding: .5vw 1vw;
+    transition: all  0.6s ease;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,0.8827906162464986) 8%, rgba(247, 246, 246, 0.72) 100%);
+    border-radius: 15px;
+ 
+ 
+ }
+ .btn:hover {
+    box-shadow: 0 0 10px #3a85da, 0 0  40px #3a85da, 0 0 80px #3a85da;
+    background-color: #f9f7f8;
+ }
+
+ .nav{
+   
+    background-color: beige;
+    position: sticky;
+    top: 10px;
+ }
+
+ .imagenpromocional{
+   width: 100px;
+   height: 150px;
+   border:solid 5px rgb(80, 140, 209);
+   border-radius: 10px;
+   margin-right: 5px;
+   margin-left: 5px;
+}
+
+#Cuadrosdepeliculas{
+   display: flexbox;
+   flex-direction: row-reverse;
+   
+}
+
+.division{
+   box-sizing: content-box;
+   border: solid white 5px;
+}
+
+.footer{
+   outline:thick double white;
+}
+
+.navbar{
+   text-align: center;
+   background-color: white;
+   position: sticky;
+   top: 10px;
+   
+}
+
+.textooverflow{
+   width: 300px;
+   height: 100px;
+   overflow: scroll;
+   overflow-clip-margin: 1em;
+   
+   
+}
+
+.sidebar{
+   background-color: white;
+   opacity: .8;
+}
+
+.division{
+   background-color:cadetblue;
+   opacity: .8;
+}
+
+.title{
+   background-color: black;
+}
+
+.funcionestelar{
+height: 200px;
+height: 200px;
+align-items: stretch;
+ 
+}
+
+.card{
+   align-content: space-between;
+}

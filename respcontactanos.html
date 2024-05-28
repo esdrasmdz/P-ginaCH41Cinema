@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="cartelerastyle.css">
+    <style>
+        .grid-container>*{
+            text-align: center;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .header{
+            grid-area: header;
+            
+        }
+        .navbar{
+            grid-area: navbar;
+            
+        }
+        .division{
+            grid-area: division;
+            
+        }
+        .sidebar{ 
+            grid-area: sidebar;
+            
+        }
+            
+        .articulo{ 
+            grid-area: articulo;
+            }
+        .footer{ 
+            grid-area: footer;
+            
+        }
+        /*Vista para el telefono*/
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "header"
+            "navbar"
+            "division"
+            "sidebar"
+            "articulo"
+            "footer"
+            ;
+        }
+        /*Vista para tablet*/
+        @media(min-width:768px){
+            .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas:
+                "header header"
+                "navbar navbar"
+                "division division"
+                "sidebar sidebar"
+                "articulo articulo"
+                "footer footer";
+            }
+            .title{
+                font-size: 1.5rem;
+            }
+        }
+        @media(min-width:900px){
+            .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas:
+                "header header header"
+                "navbar navbar navbar"
+                "sidebar division division"
+                "articulo articulo articulo"
+                "footer footer footer";
+            }
+        }
+        .title{
+            color: aliceblue;
+            font-size: 2.5rem; /*20.5rem tamaño fuente incial*/
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+    </style>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <img src="https://www.shutterstock.com/image-vector/abstract-cinema-logo-vector-template-600nw-508792729.jpg" alt="Flores">
+    </header>
+
+    <nav class="navbar">
+        <a href="./responsivoindex.html" target="_blank">Inicio</a>
+        <a href="./horarios.html">Horarios</a>
+        <a href="./cartelera.html">Cartelera</a>
+        <a href="./respcontactanos.html" target="_blank">Contáctanos</a>
+        </nav>
+
+    <div class="division"> <h1>
+        <strong>Gracias por querer ser parte de CH41 CINEMA</strong></h1> 
+        <h2>Nos importa tu opinion, llena los siguientes formularios</h2>
+    </div>
+
+    <aside class="sidebar">
+        <div>
+            <fieldset>
+            <h2>Datos Personales</h2><br>
+            <label for="Nombre">Ingresa tu nombre y primer apellido</label>
+            <input type="text" id="Nombre"><br>
+    
+            <label for="email">Ingresa tu correo electrónico</label>
+            <input type="email" id="email" placeholder="ejemplo@mail.com"><br>
+    
+            <label for="Telefono">Ingresa tu numero de celular</label>
+            <input type="tel" name="" id="Telefono"><br>
+    
+            </fieldset>
+        </div>
+    </aside>
+
+
+    <article class="articulo">
+        <div id="Cuadrosdepeliculas">
+        <div>
+            <img class="imagenpromocional" src="https://es.web.img3.acsta.net/pictures/23/01/23/16/41/0617610.jpg" alt="Cuadroficcion">
+            <div>
+                <h5>Terror</h5>
+                <input type="checkbox" name="Terror">
+            </div>
+        </div><br>
+
+
+        <div>
+            <img class="imagenpromocional" src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2023/07/tron-3-scaled.jpeg?fit=2560%2C1440&quality=50&strip=all&ssl=1" alt="Cuadroficcion">
+            <div>
+                <h5>Ciencia Ficción</h5>
+                <input type="checkbox" name="CienciaFiccion">
+            </div>
+        </div><br>
+
+        <div>
+            <img class="imagenpromocional" src="https://elcomercio.pe/resizer/Kf8j_yhvdg6-VYAePXurTMfJbQc=/980x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NODVXWOHOZDHXKFVA6C3IYRW7I.png" alt="CuadroRomance">
+            <div>
+                <h5>Romance</h5>
+                <input type="checkbox" name="Romance">
+            </div>
+        </div><br>
+
+        <div>
+            <img class="imagenpromocional" src="https://media.gq.com.mx/photos/5be9df325c1fcbd1504c3507/4:3/w_1600,h_1200,c_limit/john_whick_327.jpg" alt="CuadroAccion">
+            <div>
+                <h5>Acción</h5>
+                <input type="checkbox" name="Accion">
+            </div>
+        </div><br>
+    </div>
+    </article>
+
+    <footer class="footer">
+        <div class="borderbox">
+            <h2>Siguemos en nuestras redes sociales</h2>
+            <p>Lee nuestra politica de privacidad</p>
+            <p class="textooverflow"> Queremos informarte del tipo de datos que recogemos cuando utilizas nuestros servicios
+
+                Recogemos información para proporcionar los mejores servicios a todos nuestros usuarios: desde determinar información básica, como el idioma que hablas, hasta datos más complejos, como los anuncios que te resultarán más útiles, las personas que más te interesan online o los vídeos de YouTube que te pueden gustar. El tipo de información que recoge Google y cómo se utiliza esa información depende del uso que hagas de nuestros servicios y de cómo administres los controles de privacidad.
+                
+                Si no has iniciado sesión en una cuenta de Google, almacenamos la información que recogemos con identificadores únicos vinculados al navegador, la aplicación o el dispositivo que utilices. Esto nos permite, por ejemplo, mantener tus preferencias en todas las sesiones de navegación, como tu idioma preferido o si quieres que te mostremos resultados de búsqueda o anuncios más relevantes basados en tu actividad.
+                
+                Si has iniciado sesión, también recogemos información que almacenamos en tu cuenta de Google y que tratamos como información personal.</p>
+            </div>
+    </footer>
+</body>
+</html>

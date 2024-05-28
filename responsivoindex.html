@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="cartelerastyle.css">
+    <style>
+        .grid-container>*{
+            text-align: center;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .header{
+            grid-area: header;
+            
+        }
+        .navbar{
+            grid-area: navbar;
+            
+        }
+        .division{
+            grid-area: division;
+            
+        }
+        .sidebar{ 
+            grid-area: sidebar;
+            
+        }
+            
+        .articulo{ 
+            grid-area: articulo;
+            }
+        .footer{ 
+            grid-area: footer;
+            
+        }
+        /*Vista para el telefono*/
+        .grid-container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto;
+            grid-template-areas: 
+            "header"
+            "navbar"
+            "division"
+            "sidebar"
+            "articulo"
+            "footer"
+            ;
+        }
+        /*Vista para tablet*/
+        @media(min-width:768px){
+            .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas:
+                "header header"
+                "navbar navbar"
+                "division division"
+                "sidebar sidebar"
+                "articulo articulo"
+                "footer footer";
+            }
+            .title{
+                font-size: 1.5rem;
+            }
+        }
+        @media(min-width:900px){
+            .grid-container{
+                grid-template-columns: auto;
+                grid-template-areas:
+                "header header header"
+                "navbar navbar navbar"
+                "division division division"
+                "sidebar sidebar articulo"
+                "footer footer footer";
+            }
+        }
+        .title{
+            color: aliceblue;
+            font-size: 2.5rem; /*20.5rem tamaño fuente incial*/
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+    </style>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <img src="https://www.shutterstock.com/image-vector/abstract-cinema-logo-vector-template-600nw-508792729.jpg" alt="Flores">
+    </header>
+
+    <nav class="navbar">
+        <a href="./responsivoindex.html" target="_blank">Inicio</a>
+        <a href="./horarios.html">Horarios</a>
+        <a href="./cartelera.html">Cartelera</a>
+        <a href="./respcontactanos.html" target="_blank">Contáctanos</a>
+        </nav>
+
+    <div class="division"> <h1 class="title">
+        <strong>Bienvenidos a CH41 CINEMA</strong></h1> 
+    </div>
+
+    <aside class="sidebar">
+        <div class="card" style="display: flex; text-align: justify;">
+            <img class="funcionestelar" src="https://cdnb.artstation.com/p/assets/images/images/050/326/635/large/rahal-nejraoui-deapdool-3-poster-4-by-rahalarts.jpg?1654601588" alt="deadpool3dos">
+            <div style="display: flex; flex-direction: column; justify-content: center;">
+                <h1>DEADPOOL 3</h1> <br>
+                <h1>FUNCION ESTELAR</h1>
+                <img class="funcionestelar" src="https://www.mubis.es/media/users/12828/325713/posible-logo-oficial-para-deadpool-3-original.jpg" alt="deadpool3">
+            </div>
+
+        </div>
+    </aside>
+
+    <article class="articulo">
+        <h2>Bienvenido a la mejor experiencia de tu vida</h2>
+        <p>En CH41 contamos con excelentes instalaciones que te harán vivir la magia del cine de diferente manera ¡Visítanos!</p>
+</article>
+
+    <footer class="footer">Footer</footer>
+</body>
+</html>
